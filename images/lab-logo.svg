@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="98 92 332 332">
+  <!-- Watershed Environment Lab logo (vector recreation) -->
+  <defs>
+    <clipPath id="mtn">
+      <path d="M256 112 L188 226 H324 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- top: forested mountain -->
+  <path d="M256 112 L188 226 H324 Z" fill="#4d7f5c" stroke="#4d7f5c" stroke-width="20" stroke-linejoin="round"/>
+  <g clip-path="url(#mtn)">
+    <path d="M204 176 L232 232 L256 184 L280 232 L308 176" fill="none" stroke="#7a5138" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+
+  <!-- middle-left: grassland / soil -->
+  <path d="M182 252 H298 L272 316 H156 Z" fill="#7fa877" stroke="#7fa877" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M162 300 H278 L272 316 H156 Z" fill="#7a5f42" stroke="#7a5f42" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- bottom-left: pavement -->
+  <path d="M144 342 H262 L236 406 H118 Z" fill="#a3a3a3" stroke="#a3a3a3" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M130 390 H248 L236 406 H118 Z" fill="#6f6f6f" stroke="#6f6f6f" stroke-width="14" stroke-linejoin="round"/>
+  <defs>
+    <clipPath id="pave">
+      <path d="M144 342 H262 L238 400 H120 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#pave)" fill="none" stroke="#6f6f6f" stroke-width="6">
+    <path d="M132 371 H260"/>
+    <path d="M192 340 L179 371"/>
+    <path d="M236 340 L223 371"/>
+    <path d="M163 371 L150 402"/>
+    <path d="M212 371 L199 402"/>
+  </g>
+
+  <!-- right: water drop / lake -->
+  <path d="M330 240
+           C338 252 398 348 406 372
+           C412 392 400 400 386 396
+           C370 391 360 384 344 388
+           C328 392 320 400 300 400
+           H256
+           C270 356 316 262 330 240 Z"
+        fill="#93c1de" stroke="#93c1de" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="366" cy="336" r="7" fill="#fff"/>
+  <circle cx="382" cy="358" r="11" fill="#fff"/>
+</svg>
