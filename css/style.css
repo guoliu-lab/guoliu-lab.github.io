@@ -71,7 +71,9 @@ a:hover { text-decoration: underline; }
   width: 190px;
   height: 190px;
   flex-shrink: 0;
+  mix-blend-mode: multiply; /* hide the JPG's white background on the light hero */
 }
+.nav-logo { mix-blend-mode: multiply; }
 .hero-tags { margin-top: 1.2rem; }
 
 .portrait {
