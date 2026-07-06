@@ -44,7 +44,7 @@ a:hover { text-decoration: underline; }
   align-items: center;
 }
 .nav-name { font-weight: 700; font-size: 1.05rem; color: var(--text); display: flex; align-items: center; gap: 0.55rem; }
-.nav-logo { height: 30px; width: 30px; }
+.nav-logo { height: 44px; width: 44px; margin: -8px -7px; mix-blend-mode: multiply; }
 .nav-name:hover { text-decoration: none; color: var(--accent); }
 .nav-links a {
   margin-left: 1.4rem;
@@ -68,12 +68,13 @@ a:hover { text-decoration: underline; }
   align-items: flex-start;
 }
 .hero-logo {
-  width: 190px;
-  height: 190px;
+  /* logo_raw.jpg has ~30% white margins; larger box + negative margins keep the visual size */
+  width: 270px;
+  height: 270px;
+  margin: -40px;
   flex-shrink: 0;
   mix-blend-mode: multiply; /* hide the JPG's white background on the light hero */
 }
-.nav-logo { mix-blend-mode: multiply; }
 .hero-tags { margin-top: 1.2rem; }
 
 .portrait {
