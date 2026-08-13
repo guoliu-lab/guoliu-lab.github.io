@@ -64,10 +64,10 @@
             <a class="btn" href="https://github.com/GuowangchenLiu" target="_blank" rel="noopener">GitHub</a>
             <a class="btn" href="mailto:gliu@pku.edu.cn">Email</a>
           </div>
-          <div class="metrics">
-            <div class="metric"><span class="metric-num">24</span><span class="metric-label">Publications</span></div>
-            <div class="metric"><span class="metric-num">385+</span><span class="metric-label">Citations</span></div>
-            <div class="metric"><span class="metric-num">13</span><span class="metric-label">h-index</span></div>
+          <div class="metrics" title="Source: Google Scholar, updated automatically">
+            <div class="metric"><span class="metric-num" id="stat-pubs">25</span><span class="metric-label">Publications</span></div>
+            <div class="metric"><span class="metric-num" id="stat-cites">397</span><span class="metric-label">Citations</span></div>
+            <div class="metric"><span class="metric-num" id="stat-hindex">13</span><span class="metric-label">h-index</span></div>
           </div>
         </div>
       </div>
@@ -235,6 +235,19 @@
   <footer>
     <p>© 2026 Watershed Environment Lab · Peking University · Last updated July 2026</p>
   </footer>
+
+  <script>
+    // Live metrics from Google Scholar, refreshed daily by GitHub Actions
+    fetch('data/scholar.json')
+      .then(r => r.json())
+      .then(d => {
+        const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.textContent = v; };
+        set('stat-pubs', d.publications);
+        set('stat-cites', d.citations);
+        set('stat-hindex', d.hindex);
+      })
+      .catch(() => {}); // keep the baked-in numbers if the fetch fails
+  </script>
 
 </body>
 </html>
