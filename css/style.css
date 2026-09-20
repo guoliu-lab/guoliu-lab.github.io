@@ -77,6 +77,46 @@ a:hover { text-decoration: underline; }
 }
 .hero-tags { margin-top: 1.2rem; }
 
+/* participating institutions strip */
+.partners {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem 2.5rem;
+}
+.partners-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem !important;
+}
+.partner-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.8rem;
+}
+.partner-list li {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text);
+  position: relative;
+  padding-left: 1rem;
+}
+.partner-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 .portrait {
   width: 160px;
   height: 160px;
@@ -257,6 +297,8 @@ footer {
   .profile { flex-direction: column; align-items: center; text-align: center; }
   .profile .hero-links, .profile .metrics { justify-content: center; }
   .news-list li { flex-direction: column; gap: 0.1rem; }
+  .partner-list { justify-content: center; }
+  .partners-label { text-align: center; }
   .pubs.featured li { grid-template-columns: 1fr; }
   .pub-fig { grid-column: 1; grid-row: auto; order: 4; width: 100%; max-height: 200px; margin-top: 0.6rem; }
 }
