@@ -77,8 +77,6 @@ a:hover { text-decoration: underline; }
 }
 .hero-tags { margin-top: 1.2rem; }
 
-/* institution names inside the hero intro */
-.inst { color: var(--text); font-weight: 600; }
 
 .portrait {
   width: 160px;
