@@ -77,12 +77,8 @@ a:hover { text-decoration: underline; }
 }
 .hero-tags { margin-top: 1.2rem; }
 
-/* participating institutions strip */
-.partners {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 1.25rem 2.5rem;
-}
+/* participating institutions, inside the hero intro */
+.partners { margin-top: 1.3rem; }
 .partners-label {
   font-size: 0.78rem;
   font-weight: 600;
