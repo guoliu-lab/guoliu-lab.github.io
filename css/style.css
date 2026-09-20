@@ -155,22 +155,6 @@ section p { margin-bottom: 0.9rem; }
   font-weight: 500;
 }
 
-/* education */
-.edu { list-style: none; }
-.edu li { margin-bottom: 0.7rem; padding-left: 0; }
-.edu-year {
-  display: inline-block;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  background: var(--bg-soft);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 0.05rem 0.45rem;
-  margin-right: 0.5rem;
-  white-space: nowrap;
-}
-
 /* ---- News ---- */
 .news-list { list-style: none; }
 .news-list li {
