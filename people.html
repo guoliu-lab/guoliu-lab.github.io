@@ -1,0 +1,38 @@
+---
+layout: default
+title: People
+permalink: /people/
+description: Members of the Watershed Environment Lab across its participating institutions.
+---
+
+<main>
+  <section id="people">
+    <h2>People</h2>
+    <p>Our members are based at the lab's participating institutions and work together across them.</p>
+
+    {%- assign groups = site.data.people | group_by: "institution" %}
+    {%- for group in groups %}
+    <h3>{{ group.name }}</h3>
+    <ul class="people-list">
+      {%- for person in group.items %}
+      <li class="person">
+        {%- if person.photo %}
+        <img class="person-photo" src="{{ person.photo | relative_url }}" alt="{{ person.name }}" loading="lazy" onerror="this.style.display='none'">
+        {%- endif %}
+        <div class="person-text">
+          <p class="person-name">{{ person.name }}{% if person.name_cn %} <span class="cn-name">{{ person.name_cn }}</span>{% endif %}</p>
+          {%- if person.role %}<p class="person-role">{{ person.role }}</p>{% endif %}
+          {%- if person.interests %}<p class="person-interests">{{ person.interests }}</p>{% endif %}
+          {%- if person.email or person.link %}
+          <p class="person-links">
+            {%- if person.email %}<a href="mailto:{{ person.email }}">{{ person.email }}</a>{% endif %}
+            {%- if person.link %}{% if person.email %} · {% endif %}<a href="{{ person.link }}" target="_blank" rel="noopener">Homepage</a>{% endif %}
+          </p>
+          {%- endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- endfor %}
+  </section>
+</main>

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+description: Peer-reviewed publications of the Watershed Environment Lab.
+---
+
+<main>
+  <section id="publications">
+    <h2>Publications</h2>
+    {% include pub-note.html %}
+
+    <h3>Selected First-Author Papers</h3>
+    <ol class="pubs featured">
+      {%- assign first = site.data.publications | where: "first_author", true %}
+      {%- for pub in first %}
+      {% include publication.html pub=pub %}
+      {%- endfor %}
+    </ol>
+
+    <h3>Co-Authored Papers</h3>
+    <ol class="pubs">
+      {%- assign co = site.data.publications | where_exp: "p", "p.first_author != true" %}
+      {%- for pub in co %}
+      {% include publication.html pub=pub %}
+      {%- endfor %}
+    </ol>
+  </section>
+</main>

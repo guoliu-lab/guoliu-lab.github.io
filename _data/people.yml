@@ -1,0 +1,19 @@
+# Lab members, grouped on the page by the `institution` field.
+# Add someone by copying a block. `photo`, `email` and `link` are optional.
+#
+# - name: Full Name
+#   name_cn: 中文名
+#   role: Ph.D. Student
+#   institution: Beijing Normal University
+#   interests: Nutrient transport modeling
+#   photo: images/people/filename.jpg
+#   email: someone@example.edu
+#   link: https://example.com
+
+- name: Guowangchen Liu
+  name_cn: 刘国王辰
+  role: Principal Investigator
+  institution: Peking University
+  interests: Watershed hydrology, nutrient cycles, machine learning
+  photo: images/profile.jpg
+  email: gliu@pku.edu.cn

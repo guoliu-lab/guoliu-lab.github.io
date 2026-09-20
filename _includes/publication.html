@@ -1,0 +1,12 @@
+{%- comment -%}
+Renders one entry from _data/publications.yml.
+Expects: include.pub
+{%- endcomment -%}
+<li>
+  {%- if include.pub.figure %}
+  <img class="pub-fig" src="{{ include.pub.figure | relative_url }}" alt="Figure from this paper" loading="lazy" onerror="this.style.display='none'">
+  {%- endif %}
+  <p class="pub-title">{% if include.pub.doi %}<a href="https://doi.org/{{ include.pub.doi }}" target="_blank" rel="noopener">{{ include.pub.title }}</a>{% else %}{{ include.pub.title }}{% endif %}</p>
+  <p class="pub-authors">{{ include.pub.authors | replace: "G. Liu", '<span class="me">G. Liu</span>' }}</p>
+  <p class="pub-venue"><em>{{ include.pub.journal }}</em>{% if include.pub.details %}, {{ include.pub.details }}{% endif %} ({{ include.pub.year }})</p>
+</li>

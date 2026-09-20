@@ -1,0 +1,36 @@
+title: Watershed Environment Lab
+description: >-
+  A joint research group in China initiated by Peking University, working on
+  watershed hydrology, water quality, nutrient cycles, and machine learning.
+url: https://guoliu-lab.github.io
+baseurl: ""
+
+# Lab-wide values used across pages
+lab:
+  pi: Guowangchen Liu
+  pi_cn: 刘国王辰
+  email: gliu@pku.edu.cn
+  email_alt: liuguowangchen@foxmail.com
+  scholar: https://scholar.google.com/citations?user=RxDTLEYAAAAJ
+  researchgate: https://www.researchgate.net/profile/Guowangchen-Liu
+  github: https://github.com/GuowangchenLiu
+
+# Top navigation; add a page here and it appears on every page
+nav:
+  - title: About
+    url: /
+  - title: News
+    url: /news/
+  - title: Publications
+    url: /publications/
+  - title: People
+    url: /people/
+  - title: Contact
+    url: /contact/
+
+exclude:
+  - scripts/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

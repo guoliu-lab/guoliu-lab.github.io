@@ -1,0 +1,16 @@
+# News — newest first. 'text' may contain simple HTML such as <em>...</em>.
+
+- date: "2026-06"
+  text: "Our study on phosphorus dynamics in the Yellow River under damming and the Water-Sediment Regulation Scheme is published in <em>Water Resources Research</em>! 🎉"
+
+- date: "2026-01"
+  text: "Our paper on a process-model-informed graph attention network for daily nutrient simulation is now online at <em>Water Research</em>."
+
+- date: "2025-12"
+  text: "Our study “Human alterations to global riverine phosphorus fluxes to the ocean” is published in <em>Science Advances</em>! 🎉"
+
+- date: "2025-06"
+  text: "New collaborative paper on the spatiotemporal variability of nonpoint source pollution appears in <em>Water Research</em>."
+
+- date: "2024-05"
+  text: "Our paper coupling machine learning and mechanistic watershed models is published in <em>Journal of Hydrology</em>."
